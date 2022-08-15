@@ -40,8 +40,8 @@ class Program
        string[] namesRase = {"Люди", "Эльфы", "Гномы", "Орки", "Гоблины"};
        Console.WriteLine("Выбери свою расу ");
        Select(namesRase);
-       string RaseHero = namesRase[Convert.ToInt32(Console.ReadLine())-1];
-       Console.WriteLine("Вы выбрали расу "+ RaseHero); 
+       string RaseHero = namesRase[Convert.ToInt32(Console.ReadLine()) -1];
+       Console.WriteLine("Вы выбрали расу " + RaseHero); 
        myHero.Rase = RaseHero;  
     }
     static void SelectSex(Hero myHero)
@@ -49,8 +49,8 @@ class Program
        string[] namesSex = {"Женский", "Мужской"};
        Console.WriteLine("Выбери свой пол ");
        Select(namesSex);
-       string SexHero = namesSex[Convert.ToInt32(Console.ReadLine())-1];
-       Console.WriteLine("Вы выбрали пол "+ SexHero);  
+       string SexHero = namesSex[Convert.ToInt32(Console.ReadLine()) -1];
+       Console.WriteLine("Вы выбрали пол " + SexHero);  
        myHero.Sex = SexHero;
     }
     
@@ -59,18 +59,18 @@ class Program
         string[] namesClass = {"Воин", "Разбойник", "Маг", "Вор"};
         Console.WriteLine("Выбери свой класс ");
         Select(namesClass);
-        string ClassHero = namesClass[Convert.ToInt32(Console.ReadLine())-1];
-        Console.WriteLine("Вы выбрали класс "+ ClassHero);
+        string ClassHero = namesClass[Convert.ToInt32(Console.ReadLine()) -1];
+        Console.WriteLine("Вы выбрали класс " + ClassHero);
         myHero.Class = ClassHero;
     }
 
     static void Select(string[] words)
     {
-       for (int i = 0; i < words.Length-1; i++)
+       for (int i = 0; i < words.Length -1; i++)
        {
-          Console.Write(i+1+"-"+words[i]+", ");
+          Console.Write(i + 1 + "-" + words[i] + ", ");
        }
-       Console.Write(words.Length + "-"+words[words.Length-1]+". ");
+       Console.Write(words.Length + "-"+words[words.Length-1] + ". ");
        Console.WriteLine(" ");
     }
   
@@ -85,10 +85,10 @@ class Program
           SelectClass(myHero);
 
           Console.WriteLine("Все наши хар-ки ");
-          Console.WriteLine("Ваше имя "+myHero.Name);
-          Console.WriteLine("Ваш пол "+myHero.Sex);
-          Console.WriteLine("Ваша раса "+myHero.Rase);
-          Console.WriteLine("Ваш класс "+myHero.Class);
+          Console.WriteLine("Ваше имя "+ myHero.Name);
+          Console.WriteLine("Ваш пол "+ myHero.Sex);
+          Console.WriteLine("Ваша раса "+ myHero.Rase);
+          Console.WriteLine("Ваш класс "+ myHero.Class);
       } 
       
 }
