@@ -5,21 +5,20 @@ class Program
     {
         static void Main(string[] args)
         {
-            Random rnd = new Random();
-            int[] d = new int[30];
-            int max=0, min=100;
-            for (int i = 0; i<d.Length; i++ )  d[i] = rnd.Next(100);
-            for (int i = 0; i<d.Length; i++)
+            Console.WriteLine("Введите количество элементов массива");
+            int size = Convert.ToInt32( Console.ReadLine() ); 
+            double[] array = new double[size];
+            Random myRandom = new Random();
+            double max=0, min=100;
+            for (int i = 0; i < array.Length; i++)
             {
-                if (d[i] > max) max = d[i];
-                if (d[i] < min) min = d[i];
-            }
-           
-               for (int i = 0; i < d.Length; i++) Console.Write(" "+d[i]);//выводим массив
-               Console.WriteLine();
-                 Console.WriteLine("max:  " + max);
-                 Console.WriteLine("min  " +min);
-                 Console.WriteLine("Разница максимального и минимального:  "+(max - min));
-                Console.ReadKey();
+                array[i] =100 - myRandom.Next(100+size) + myRandom.NextDouble();                
+                Console.Write("{0:F0} ", array[i]); // Округляем вещественные числа до целых
+                if ( array[i] > max) max = array[i];
+                if ( array[i] < min) min = array[i];               
+            } 
+            Console.WriteLine(" ");
+            Console.WriteLine("Разница между максимальным {0:F0} и минимальным {1:F0} = {2:F0}",max,min,(max - min));
+            Console.WriteLine(" ");            
         }
     }
