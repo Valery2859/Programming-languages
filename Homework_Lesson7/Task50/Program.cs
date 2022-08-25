@@ -11,17 +11,6 @@ class Program
         Console.WriteLine("Введите количество элементов массива в строке n: ");
         int n = Convert.ToInt32(Console.ReadLine());
         int[,] array = new int[m, n];
-        /*for (int i = 0; i < array.GetLength(0); i++)
-        {
-            for (int j = 0; j < array.GetLength(1); j++)
-                array[i, j] = Convert.ToInt32(new Random().Next(0, 21));
-        }
-        for (int i = 0; i < array.GetLength(0); i++)
-        {
-            for (int j = 0; j < array.GetLength(1); j++)
-                Console.Write(array[i, j] + "\t  ");
-            Console.WriteLine();
-        }*/
         Random myRandom = new Random();
         Console.WriteLine(" ");
         for (int i = 0; i < m; i++)
