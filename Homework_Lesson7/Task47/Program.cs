@@ -17,7 +17,7 @@ class Program
             for (int j = 0; j < n; j++)
             {
                 array[i, j] = myRandom.Next(-10, 10 + n) + myRandom.NextDouble();
-                Console.Write("{0:F1}   ", array[i, j]);
+                Console.Write("{0:F1}\t ", array[i, j]);
             }
             Console.WriteLine(" ");
 
