@@ -23,7 +23,6 @@ class Program
             Console.WriteLine(" ");
         }
         double a = 0;
-        int b = 0;
         Console.Write("среднее арифметическое каждого столбца: ");
         for (int i = 0; i < n; i++)
         {
@@ -31,8 +30,8 @@ class Program
             {
                 a += array[j, i];
             }
-                Console.Write("{0:F1}; ", a / m);
-            
+            Console.Write("{0:F1}; ", a / m);
+
             a = 0;
         }
         Console.WriteLine(" ");
