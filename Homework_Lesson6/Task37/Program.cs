@@ -31,13 +31,5 @@ class Program
             Console.Write("{0} ", array2[i]);
         }
         Console.WriteLine(" ");
-
-
-
-
-
-
-        // Console.Write(" --> {0} чётных", result);
-        //  Console.WriteLine(" ");
     }
 }
