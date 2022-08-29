@@ -1,4 +1,4 @@
-﻿/*
+﻿
 
 
 int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
@@ -31,8 +31,8 @@ array[minPosition] = temporary;
 PrintArray(arr);
 SelectionSort(arr);
 PrintArray(arr);
-*/
 
+/*
 void DO() //Функция ничегоне принимает и ничего не отдает
 {
 
@@ -55,3 +55,4 @@ string DO5(int number) //Функция принимает число и отд�
 }
 string str = DO5(5);
 Console.WriteLine(str);
+*/
