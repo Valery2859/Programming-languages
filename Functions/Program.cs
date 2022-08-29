@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/*
 
 
 int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
@@ -31,3 +31,27 @@ array[minPosition] = temporary;
 PrintArray(arr);
 SelectionSort(arr);
 PrintArray(arr);
+*/
+
+void DO() //Функция ничегоне принимает и ничего не отдает
+{
+
+}
+void DO2(int number) // Функция принимает число и ничего не отдает
+{
+
+}
+int DO3()// Функция ничего не принимает и отдает число
+{
+    return 1;
+}
+int DO4(int number) // Функция принимает и отдает число
+{
+    return number;
+}
+string DO5(int number) //Функция принимает число и отдает строку
+{
+    return number.ToString()+ " яблок";
+}
+string str = DO5(5);
+Console.WriteLine(str);
