@@ -22,20 +22,20 @@ class Program
             }
             Console.WriteLine(" ");
         }
-        int result = 1;                //переменная для хранения строки с наименьшей суммой элементов
-        int temp1 = 0, temp2 = 0;      // переменные для хранения суммы элементов        
+        int result = 1;                
+        int temp1 = 0, temp2 = 0;      
         for (int i = 0; i < m; i++)
         {
-            for (int j = 0; j < n; j++) //проходим по массиву с начала и до конца
+            for (int j = 0; j < n; j++) 
             {
                 if (i == 0)
                 {
                     temp2 += array[i, j];
-                    temp1 = temp2;       //сохраняем сумму первой строки
+                    temp1 = temp2;       
                 } 
-                else { temp2 += array[i, j]; } //считаем суммы следующих строк              
+                else { temp2 += array[i, j]; }             
             }
-            if (temp1 > temp2) //сравниваем суммы строк
+            if (temp1 > temp2) 
             {
                 result = i + 1;
                 temp1 = temp2;
@@ -44,7 +44,7 @@ class Program
             temp2 = 0;
         }
         Console.WriteLine(" ");
-        Console.Write("строка с наименьшей суммой элементов: {0}", result);//выводим результат
+        Console.Write("строка с наименьшей суммой элементов: {0}", result);
         Console.WriteLine(" ");
         Console.WriteLine(" ");
     }
