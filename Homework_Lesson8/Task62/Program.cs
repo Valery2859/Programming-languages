@@ -1,11 +1,11 @@
 ﻿
 
-class Spiral
+class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         Console.Clear();
-        Console.Write("Введите положительное число массива N x N: ");
+        Console.Write("Введите положительное число матрицы N x N: ");
         int n = Convert.ToInt32(Console.ReadLine());
         int s = 1;
         Console.WriteLine("");
